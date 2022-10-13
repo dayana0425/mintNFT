@@ -3,6 +3,8 @@
 ### Tutorial Link: https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy
 ### Side Note: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
 
+### Use [Firebase](https://filebase.com/) for hosting my metadata on IPFS.
+
 ### Commands:
 ```
 yarn compile
