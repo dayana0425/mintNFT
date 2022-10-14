@@ -17,6 +17,15 @@
         ![Figure 1](images/polygonscan.png)
 5. That's it!
     ![Figure2](images/opensea.png)
+### Questions:
+1. What was the biggest lesson from this challenge?
+      - The biggest lesson for me was learning that an NFTs metadata isn't stored on-chain. I used to think only the image was stored on IPFS but I didn't know that the metadata was stored on IPFS too. 
+2. What did you like/dislike about this challenge? Why?
+      - I liked the simplicity & leveraging existing tools like OpenZepplin's Smart Contract Wizard to make developing easier.
+      - I didn't dislike anything. :) 
+3. What do you want to build next?
+      - Dynamic NFTs!
+      - A UI for Minting NFTs.
 ### Commands:
 ```
 yarn compile
