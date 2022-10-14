@@ -6,11 +6,11 @@
 1. What was the biggest lesson from this challenge?
       - The biggest lesson for me was learning that an NFTs metadata isn't stored on-chain. I used to think only the image was stored on IPFS but I didn't know that the metadata was stored on IPFS too. 
 2. What did you like/dislike about this challenge? Why?
-      - I liked the simplicity & leveraging existing tools like OpenZepplin's Smart Contract Wizard to make developing easier.
-      - I didn't dislike anything. :) 
+      - It was super cool learning how NFTs work & creating metadata that adheres to OpenSea's metadata standard! :) 
 3. What do you want to build next?
       - Dynamic NFTs!
       - A UI for Minting NFTs.
+      - NFTs that you can stake.
       
 ### How Did I Mint?
 1. First, I used OpenZepplin's Smart Contract Wizard to create my ERC21 Smart Contract. [see here](https://docs.openzeppelin.com/contracts/4.x/wizard)
