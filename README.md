@@ -3,8 +3,20 @@
 ### Tutorial Link: https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy
 ### Side Note: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
 
-### Used [Firebase](https://filebase.com/) for hosting my metadata on IPFS.
+### Used [Filebase](https://filebase.com/) for hosting my metadata on IPFS.
+### View My Minted NFT: https://testnets.opensea.io/assets/mumbai/0x9708005b48b05022293daa6ed5d8b551eebefbf1/1
+* View the metadata in the `metadata1.json` file
 
+### How did I mint?
+    1. First, I used OpenZepplin's Smart Contract Wizard to create my ERC21 Smart Contract. [see here](https://docs.openzeppelin.com/contracts/4.x/wizard)
+    2. I deployed my contract to Mumbai & also verified my contract! Verifying my contract allows me to write to my contract directly from PolygonScan! 
+    3. I then connected my wallet & called the `safeMint()` function with my address & the link to my metadata stored on IPFS
+    4. You have to make sure your metadata meets OpenSea's metadata standards for it to be able to display it. [see here](https://docs.opensea.io/docs/metadata-standards)
+       1. Address: `0x858C60547fE069724B017c8e42c4b27BE4F151C6`
+       2. URI: `ipfs://QmbJ4tJAgTMuBLUheCYZezjHSKnUwyBYa9qN8xxRxYYXjM`
+        ![Figure 1](images/polygonscan.png)
+    5. That's it!
+        ![Figure2](images/opensea.png)
 ### Commands:
 ```
 yarn compile

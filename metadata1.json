@@ -1,0 +1,46 @@
+{ 
+  "description": "This NFT proves I've created and deployed my first ERC21 smart contract on Polygon!",
+  "external_url": "https://twitter.com/hello_dayana",
+  "image": "https://ipfs.filebase.io/ipfs/QmVezq3MPF9BNnVND3LAHo1J4PYzKLraxZTuASFRRfwTeo",
+  "name": "Hello World!", 
+  "attributes": [
+    {
+      "trait_type": "Hair Color", 
+      "value": "Light Aqua"
+    }, 
+    {
+      "trait_type": "Eyes", 
+      "value": "Sunglasses"
+    }, 
+    {
+      "trait_type": "Mouth", 
+      "value": "None"
+    }, 
+    {
+      "trait_type": "Level", 
+      "value": 5
+    }, 
+    {
+      "trait_type": "Stamina", 
+      "value": 200
+    }, 
+    {
+      "trait_type": "Personality", 
+      "value": "Cool"
+    }, 
+    {
+      "display_type": "boost_number", 
+      "trait_type": "Aqua Power", 
+      "value": 40
+    }, 
+    {
+      "display_type": "boost_percentage", 
+      "trait_type": "Stamina Increase", 
+      "value": 10
+    }, 
+    {
+      "display_type": "number", 
+      "trait_type": "Generation", 
+      "value": 2
+    }]
+}
