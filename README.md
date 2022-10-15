@@ -1,22 +1,35 @@
-# Road To Web3: Week 1 🥳
+# Road To Web3: Week 1 - Mint NFT 🥳
 
 ### Tutorial Link: https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy
-### Side Note: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
 
-### Used [Filebase](https://filebase.com/) for hosting my metadata on IPFS.
 ### View My Minted NFT: https://testnets.opensea.io/assets/mumbai/0x9708005b48b05022293daa6ed5d8b551eebefbf1/1
-* View the metadata in the `metadata1.json` file
 
-### How did I mint?
-    1. First, I used OpenZepplin's Smart Contract Wizard to create my ERC21 Smart Contract. [see here](https://docs.openzeppelin.com/contracts/4.x/wizard)
-    2. Then, I added code to only allow 1 mint per user. The total NFT supply is 10. 
-    3. I deployed my contract to Mumbai & also verified my contract! Verifying my contract allows me to write to my contract directly from PolygonScan! 
-    4. I then connected my wallet & called the `safeMint()` function with my address & the link to my metadata stored on IPFS
-    5. You have to make sure your metadata meets OpenSea's metadata standards for it to be able to display it. [see here](https://docs.opensea.io/docs/metadata-standards)
-       1. Address: `0x858C60547fE069724B017c8e42c4b27BE4F151C6`
-       2. URI: `ipfs://QmbJ4tJAgTMuBLUheCYZezjHSKnUwyBYa9qN8xxRxYYXjM`
+### Interact with my smart contract here: https://mumbai.polygonscan.com/address/0x8542dDdd46b9557CFE3b89075a8c202E48e1ac0b#writeContract
+
+**Side Note**: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
+### Questions:
+1. What was the biggest lesson from this challenge?
+      - The biggest lesson for me was learning that an NFTs metadata isn't stored on-chain. I used to think only the image was stored on IPFS but I didn't know that the metadata was stored on IPFS too. 
+2. What did you like/dislike about this challenge? Why?
+      - It was super cool learning how NFTs work & creating metadata that adheres to OpenSea's metadata standard! :) 
+3. What do you want to build next?
+      - Dynamic NFTs!
+      - A UI for Minting NFTs.
+      - NFTs that you can stake.
+### How Did I Mint?
+1. First, I used OpenZepplin's Smart Contract Wizard to create my ERC21 Smart Contract. [see here](https://docs.openzeppelin.com/contracts/4.x/wizard)
+2. Then, I added code to only allow 1 mint per user and set the total NFT supply to 10. 
+3. I deployed my contract to Polygon Mumbai & then verified my contract. 
+      1. Verifying your contract is important because it allows you to interact with your contract directly from PolygonScan! Once your contract is verified, PolygonScan provides a simple UI for read/write functions. 
+      2. See below for how to verify your contract on PolygonScan from the Command Line. 
+4. After verifying my contract, I uploaded my image for my NFT to Filebase. Then, I created my metadata file according to OpenSea's metadata standard. [see here](https://docs.opensea.io/docs/metadata-standards)
+      1. [Filebase Website](https://filebase.com/) for hosting NFT metadata/images on IPFS.
+      2. You can view the associated metadata for my NFT in the `metadata1.json` file. It follows OpenSea's metadata standard.
+5. I then connected my wallet & called the `safeMint()` function with my address & the link to my metadata stored on IPFS.
+      1. Address: `0x858C60547fE069724B017c8e42c4b27BE4F151C6`
+      2. URI: `ipfs://QmbJ4tJAgTMuBLUheCYZezjHSKnUwyBYa9qN8xxRxYYXjM`
         ![Figure 1](images/polygonscan.png)
-    6. That's it!
+    1. That's it!
         ![Figure2](images/opensea.png)
 ### Commands:
 ```
