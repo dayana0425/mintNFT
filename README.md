@@ -19,7 +19,7 @@
       - NFTs that you can stake.
 ### How Did I Mint?
 1. First, I used OpenZepplin's Smart Contract Wizard to create my ERC21 Smart Contract. [see here](https://docs.openzeppelin.com/contracts/4.x/wizard)
-2. Then, I added code to only allow 1 mint per user and set the total NFT supply to 10. 
+2. Then, I added code to only allow 1 mint per user and set the total NFT supply to 10. [see here](https://github.com/dayana0425/mintNFT/blob/main/contracts/MintNFT.sol#L14-L16)
 3. I deployed my contract to Polygon Mumbai & then verified my contract. 
       1. Verifying your contract is important because it allows you to interact with your contract directly from PolygonScan! Once your contract is verified, PolygonScan provides a simple UI for read/write functions. 
       2. See below for how to verify your contract on PolygonScan from the Command Line. 
