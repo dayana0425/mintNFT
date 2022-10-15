@@ -2,11 +2,12 @@
 
 ### Tutorial Link: https://docs.alchemy.com/docs/how-to-develop-an-nft-smart-contract-erc721-with-alchemy
 
+**Side Note**: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
+
 ### View My Minted NFT: https://testnets.opensea.io/assets/mumbai/0x9708005b48b05022293daa6ed5d8b551eebefbf1/1
 
 ### Interact with my smart contract here: https://mumbai.polygonscan.com/address/0x8542dDdd46b9557CFE3b89075a8c202E48e1ac0b#writeContract
 
-**Side Note**: I didn't follow the tutorial exactly but I achieved the same outcome, I modified it to deploy on Polygon & used Hardhat instead of Remix.
 ### Questions:
 1. What was the biggest lesson from this challenge?
       - The biggest lesson for me was learning that an NFTs metadata isn't stored on-chain. I used to think only the image was stored on IPFS but I didn't know that the metadata was stored on IPFS too. 
@@ -31,7 +32,7 @@
         ![Figure 1](images/polygonscan.png)
     1. That's it!
         ![Figure2](images/opensea.png)
-### Commands:
+### Compile your smart contract:
 ```
 yarn compile
 ```
@@ -39,7 +40,7 @@ yarn compile
 ```
 yarn deploy
 ```
-### Output:
+### Output after deployinh:
 ```
 Using address 0xC0c630f5c9A78A75a92617852AD0F4E80BF252Cf
 Wallet balance 0.7624262968620278
@@ -52,7 +53,7 @@ Contract deployed to: 0x9708005B48B05022293Daa6ED5D8b551eEBefbF1
 ### [Verify Smart Contract on Polygonscan using Hardhat](https://coinsbench.com/verify-smart-contract-on-polygonscan-using-hardhat-9b8331dbd888)
 
 ```
-yarn hardhat verify 0x9708005B48B05022293Daa6ED5D8b551eEBefbF1 --network mumbai
+yarn hardhat verify <YOU-CONTRACT-ADDRESS-HERE> --network mumbai
 ```
 ### Output:
 ```
