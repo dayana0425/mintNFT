@@ -11,11 +11,15 @@ contract HelloWorld is ERC721, ERC721Enumerable, ERC721URIStorage {
 
     Counters.Counter private _tokenIdCounter;
 
-    uint256 MAX_SUPPLY = 10;
+    uint256 public constant MAX_SUPPLY = 10;
+    uint256 public constant USER_LIMIT = 1;
+    mapping(address => uint) public walletMints;
+    
     constructor() ERC721("HelloWorld", "HW") {}
 
     function safeMint(address to, string memory uri) public {
         require(_tokenIdCounter.current() < MAX_SUPPLY, "NFTs sold out!");
+        require(walletMints[msg.sender] <= USER_LIMIT, "I'm sorry only one NFT per user");
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
